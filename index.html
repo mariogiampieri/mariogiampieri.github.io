@@ -1,7 +1,1858 @@
 <!DOCTYPE html>
-<html>
-<body>
-<h1>Hello World</h1>
-<p>I'm hosted with GitHub Pages.</p>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../../favicon.ico">
+
+    <title>Next Generation American Suburbs</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="css/starter-template.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
+
+
+    <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
+    <!-- <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v2.0.0/mapbox-gl.js'></script>
+    <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v2.0.0/mapbox-gl.css' rel='stylesheet' /> -->
+
+    <script src="./js/jquery-3.5.1.min.js" type="text/javascript"></script>
+    <!-- pannelum -->
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="./js/pannellum.js" type="text/javascript"></script>
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="./css/pannellum.css">
+
+
+    <script src="./js/addContent.js" type="text/javascript"></script>
+</head>
+
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container" style="width:85%">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+                <a class="navbar-brand" href="#">NGAS</a>
+            </div>
+            <div id="navbar" class="collapse navbar-collapse">
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="#">Home</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Land Use Adaptation</a>
+                        <div class="dropdown-menu">
+                            <ul>
+                                <li><a class="dropdown-item" href="#mck-1">Residential District</a> </li>
+                                <li><a class="dropdown-item" href="#mck-2">Commercial Corridor District</a> </li>
+                                <li> <a class="dropdown-item" href="#mck-3">Employment + TOD</a> </li>
+                                <li> <a class="dropdown-item" href="#v-1">Mixed-Use Development</a> </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Optimizing the block</a>
+                        <div class="dropdown-menu">
+                            <ul >
+                                <li><a class="dropdown-item" href="#estate-residential">Estate Residential</a> </li>
+                                <li><a class="dropdown-item" href="#single-family-residential">Single-Family</a> </li>
+                                <!-- <li><a class="dropdown-item" href="#single-family-yard">Single-Family Yard</a> </li> -->
+                                <li><a class="dropdown-item" href="#multi-family-residential">Multi-Family</a> </li>
+                                <!-- <li><a class="dropdown-item" href="#urban-living">Urban Living</a> </li> -->
+                                <li><a class="dropdown-item" href="#neighborhood-commercial">Neighborhood Commercial</a> </li>
+                                <!-- <li> <a class="dropdown-item" href="#commercial-center">Commercial Center</a></li> -->
+                                <!-- <li><a class="dropdown-item" href="#town-center">Town Center</a> </li> -->
+                                <!-- <li><a class="dropdown-item" href="#employment-mix">Employment Mix</a> </li> -->
+                                <li> <a class="dropdown-item" href="#professional-campus">Professional Campus</a> </li>
+
+                            </ul>
+                        </div>
+                    </li>
+                    <li><a href="#day-in-the-life">A day in the life</a></li>
+                    <!-- <li><a href="#mobility-corridors">Micro-mobility</a></li> -->
+                    <!-- <li><a href="#post-covid">Post-Covid Adaptation </a></li> -->
+                    <!-- <li><a href="#about">About</a></li> -->
+                    <li><a href="#mirage">MIRAGE</a></li>
+                </ul>
+            </div>
+            <!--/.nav-collapse -->
+        </div>
+    </nav>
+
+    <!-- hero image slide -->
+    
+    <div class="container body-black" id="intro-slide">
+        
+    
+        <!-- <div id="introduction" class="container"> -->
+            <div style="background-color: rgba(255,255,255,0.6); width: 65%;">
+                <h1 id="introduction" style="color: black; position:absolute; padding-top:25px; padding-left: 50px;">Next Generation American Suburbs</h1>
+            </div>
+            <video autoplay muted loop id="myVideo" style=" width: 105%;">
+                <source src="./img/Landing Video/Landing Video.mp4" type="video/mp4">
+            </video>
+        <!-- </div> -->
+    </div>
+
+    <div class="container body-white">
+        <div id="texaplex" class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <div style="border-right: black;">
+                        <h1>EXECUTIVE SUMMARY</h1>
+                        <h2>Two Sites, Two Scales, Two Strategies</h2>
+                        <p>
+                            Traditionally, new development along the outer edges of metropolitan areas
+                            produces car-based, low density suburbs with repetitive single-family
+                            houses resting on uniform lots. This development pattern traditionally
+                            increases the burden on existing municipal infrastructure and requires the
+                            construction of costly transportation infrastructure and other utilities to
+                            support population growth. Various sources speculate that the introduction
+                            of autonomous electric vehicles (AEVs) into the consumer market will
+                            exacerbate these trends by allowing for even more dispersed suburban
+                            development. 
+                        </p>
+                        <p>
+                            This project takes two distinct suburban communities within the “Texas
+                            Triangle Megaregion” as key references due to their aggressive rate of
+                            suburban growth, and their strategic locations within the context of
+                            autonomous implementation (limited topographical variation, mild climate,
+                            and powerful regional economy).
+                        </p>
+                        <p>
+                            The project seeks to frame how the design of the built environment,
+                            considered in tandem with emergent AEV technology, can lead to the
+                            creation of higher performing suburban environments within the contexts of
+                            transportation access, environmental justice, and equitable development.
+                        </p>
+
+                        <p>
+                            The project addresses three primary scales of planning and design:
+                        </p>
+                        <ol type="1">
+                            <li>
+                                The <b>Metro </b> scale
+                            </li>
+                            <li>
+                                The <b> District</b> scale
+                            </li>
+                            <li>
+                                The <b>Block  </b> scale 
+                            </li>
+                        </ol>
+                </div>
+                </div>
+                <div class="col-md-6">
+                    <div>
+                        <img src="./img/diagrams/texaplex.png" style="width: 50%;">
+                    </div>
+                    <div>The <b>Texas Triangle</b> (also known as Texaplex) is a region of Texas which contains the state’s five largest cities and is home to the majority of the state’s population.
+                    </div>
+                    <div class="container">
+                        <ol type="1">
+                            <li><b> Dallas-Fort Worth-Arlington </b></li>
+                            <li><b> San Antonio </b> - New Braunfels</li>
+                            <li><b> Houston </b>-Sugar Land-Baytown</li>
+                            <li>College Station</li>
+                            <li><b> Austin </b>-Round Rock-San Marcos</li>
+                        </ol>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <hr>
+    </div>
+    
+    <div class="container body-white">
+        <div class="">
+            <div style="width: 80%; margin-left: 10%;">
+                <h1>Land Use</h1>
+                <p> Suburban Living areas are found in close proximity to neighborhood commercial and commercial centers and provide rooftops necessary to support the commercial and professional office uses within the corridors. These neighborhoods are generally
+                    formed as subdivisions. Residential uses-oriented interior to the site is typically buffered from surrounding development by transitional uses or landscaped areas. Lot sizes in a Suburban Living area typically less than 1/2 acre.</p>
+            </div>
+
+            <!-- <img src='./img/lu_study/00_Land Use Collection_cropped.png' style="width: 80%; margin-left: 10%; padding:10px"> -->
+            <div class="row testing" style="padding-left: 10%">
+                <div class="column testing col-sm-4">
+                    <h2>Residential</h2>
+                    <div class="row testing">
+                        <a href="#single-family-residential"><img class="legend-image-index" src="./img/diagrams/Land Use Legend/SFH.png"></a>
+                        <a href="#multi-family-residential"><img class="legend-image-index" src="./img/diagrams/Land Use Legend/MFH.png"></a>
+                    </div>
+                    <div class="row testing">
+                        <a href="#estate-residential"><img class="legend-image-index" src="./img/diagrams/Land Use Legend/ER.png"></a>
+                        <img class="legend-image-index" src="./img/diagrams/Land Use Legend/UL.png">
+                    </div>
+                    <div class="row testing">
+                        <img class="legend-image-index" src="./img/diagrams/Land Use Legend/TH&DUPLEX.png">
+                    </div>
+                </div>
+                <div class="column testing col-sm-2">
+                    <h2>Commercial</h2>
+                    <div class="row testing">
+                        <img class="legend-image-index" src="./img/diagrams/Land Use Legend/TC.png">
+                    </div>
+                    <div class="row testing">
+                        <img class="legend-image-index" src="./img/diagrams/Land Use Legend/CC.png">
+                    </div>
+                    <div class="row testing">
+                        <a href="#neighborhood-commercial"><img class="legend-image-index" src="./img/diagrams/Land Use Legend/NC.png"></a>
+                    </div>
+                </div>
+                <div class="column testing col-sm-2">
+                    <h2>Landscape</h2>
+                    <div class="row testing">
+                        <img class="legend-image-index" src="./img/diagrams/Land Use Legend/Riparian.png">
+                    </div>
+                    <div class="row testing">
+                        <img class="legend-image-index" src="./img/diagrams/Land Use Legend/GS.png">
+                    </div>
+                    <div class="row testing"></div>
+                </div>
+                <div class="column testing col-sm-2">
+                    <div class="row testing">
+                        <h2>Employment</h2>
+                    </div>
+                    <div class="row testing">
+                        <a href="estate-residential0"><img class="legend-image-index" src="./img/diagrams/Land Use Legend/PC.png"></a>
+                    </div>
+                    <div class="row testing">
+                        <img class="legend-image-index" src="./img/diagrams/Land Use Legend/EM.png">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr>
+    </div>
+    <div class="container body-white" id="lu-adaptation">
+        <div class="container section-container" id="mck-1">
+            <h1 class="header-align">Residential + Neighborhood Commercial District</h1>
+            <div class="row testing section-align">
+                <div class="col-md-6">
+                    <div class="vertical-align-center">
+                        <h3>Optimization Process</h3>
+                        <p>
+                            By redistributing commercial clusters and park
+                            space throughout the neighborhood, a finergrained suburban fabric emerges with the capacity
+                            to cater more explicitly to pedestrians, and microtransit users. This atomization is designed to
+                            reduce dependency on long trips and to increase
+                            the co-benefits of heterogeneity more broadly. 
+                        </p>
+                        <div class="row vertical-align-center">
+                            <div class="col-sm-4">
+                                <a href='#single-family-residential'> <img class='legend-image' src="./img/diagrams/Land Use Legend/SFH.png"></a>
+                                <a href='#estate-residential'> <img class='legend-image' src="./img/diagrams/Land Use Legend/ER.png"></a>
+                            </div>
+                            <div class="col-sm-4">
+                                <a href='#neighborhood-commercial'> <img class='legend-image' src="./img/diagrams/Land Use Legend/NC.png"></a>
+                                <img class='legend-image' src="./img/diagrams/Land Use Legend/GS.png">
+                            </div>
+                            <div class="col">
+                                <img class='legend-image' id='estate-residential-vertical' src="./img/diagrams/Land Use Optimization/Mckinney Site01/Vertical Bar_Before.png">
+                            </div>
+
+                        </div>
+                        <button id='toggle-a1'>Compare Before and After</button>
+                    </div>
+
+                </div>
+                <div class="col-md-6">
+                    <h2 id="a1-title">Typical Land Use Plan</h2>
+                    <!-- <h2 id="a1-title">Planned Land Use to the Year 2050</h2> -->
+                    <img class='a1-atom hide-img lu-plan-img' src="./img/diagrams/Land Use Optimization/Mckinney Site01/Site01Before.png">
+                </div>
+            </div>
+
+            <script>
+                var optImgs = {
+                    'a1': {
+                        'ex': './img/diagrams/Land Use Optimization/Mckinney Site01/Site01Before.png',
+                        'opt': './img/diagrams/Land Use Optimization/Mckinney Site01/Site01After.png'
+                    },
+                    'a2': {
+                        'ex': './img/diagrams/Land Use Optimization/Mckinney Site02/Site02Before.png',
+                        'opt': './img/diagrams/Land Use Optimization/Mckinney Site02/Site02After.png'
+                    },
+                    'a3': {
+                        'ex': './img/diagrams/Land Use Optimization/Mckinney Site03/Site03Before.png',
+                        'opt': './img/diagrams/Land Use Optimization/Mckinney Site03/Site03After.png'
+                    },
+                    'a4': {
+                        'ex': './img/diagrams/Land Use Optimization/VIDA SITE/VIDA Before.png',
+                        'opt': './img/diagrams/Land Use Optimization/VIDA SITE/VIDA After.png'
+                    }
+                }
+                var a1Buttons = document.getElementsByClassName('a1-atom')
+                var a1Toggle = document.getElementById('toggle-a1')
+                var a1Title = document.getElementById('a1-title')
+                var a1bars = document.getElementById('estate-residential-vertical')
+                a1Toggle.addEventListener('click', function() {
+                    for (var a in a1Buttons) {
+
+                        if (a1Buttons[a].classList.contains('hide-img')) {
+                            $(a1Buttons[a]).attr('src', optImgs['a1']['opt']).fadeIn('slow');
+                            a1bars.setAttribute('src', './img/diagrams/Land Use Optimization/Mckinney Site01/Vertical Bar_After.png')
+                            a1Title.innerHTML = 'Optimized Land Use Plan'
+                        } else {
+                            // a1Buttons[a].setAttribute('src', optImgs['a1']['ex'])
+                            $(a1Buttons[a]).attr('src', optImgs['a1']['ex']).fadeIn('slow');
+                            a1bars.setAttribute('src', './img/diagrams/Land Use Optimization/Mckinney Site01/Vertical Bar_Before.png')
+                            a1Title.innerHTML = 'Typical Land Use Plan'
+                        }
+                        a1Buttons[a].classList.toggle('hide-img')
+                    }
+                })
+            </script>
+
+
+            <hr>
+            <div class="row testing plan-align">
+                <h2>District Master Plan</h2>
+                <div class="col-md-6">
+                    <img class="lu-plan" src='./img/Proposed Plan/McKinney Site 01/McKinney Site01_Landuse.png'>
+                </div>
+                <div class="col-md-6">
+                    <img class="lu-plan" src='./img/Proposed Plan/McKinney Site 01/McKinney Site01_Fabric.png'>
+                </div>
+            </div>
+            <hr>
+            <div class="row testing">
+                <h2 class="header-align">Proximity Analysis</h2>
+                <div class="row testing section-align">
+                    
+                    <div class="col-md-6">
+                        <div class="row">
+                            
+                        </div>
+                        <div class="row">
+
+                            <div class="col-md-6">
+                                <img src=".\img\diagrams\Land Use Plan Analysis\Site01\IMG-01.png" style="width: 160%;">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6">
+                        <div class="row analysis-row">
+                            <div class="col-sm-3">
+                                <img src=".\img\diagrams\Land Use Plan Analysis\Site01\IMG-02-P01.png" style="width: 100%;">
+                            </div>
+                            <div class="col-sm-3">
+                                <img src=".\img\diagrams\Land Use Plan Analysis\Site01\IMG-02-P02.png" style="width: 100%;">
+                            </div>
+                            <div class="col-sm-4">
+                                <h4>Existing Proposal</h4>
+                                <dd><b>15%</b> area above medium proximity to green space </dd>
+                                <dd><b>25%</b> area above medium proximity to commercial </dd>
+                            </div>
+                        </div>
+                        <div class="row analysis-row">
+                            <div class="col-sm-3">
+                                <img src=".\img\diagrams\Land Use Plan Analysis\Site01\IMG-02-P03.png" style="width: 100%;">
+                            </div>
+                            <div class="col-sm-3">
+                                <img src=".\img\diagrams\Land Use Plan Analysis\Site01\IMG-02-P04.png" style="width: 100%;">
+
+                            </div>
+                            <div class="col-sm-4">
+                                <h4>Optimized Proposal 1</h4>
+                                <dd><b>70%</b> area above medium proximity to green space </dd>
+                                <dd><b>75%</b> area above medium proximity to commercial </dd>
+                            </div>
+                        </div>
+                        <div class="row analysis-row">
+                            <div class="col-sm-3">
+                                <img src=".\img\diagrams\Land Use Plan Analysis\Site01\IMG-02-P05.png" style="width: 100%;">
+                            </div>
+                            <div class="col-sm-3">
+                                <img src=".\img\diagrams\Land Use Plan Analysis\Site01\IMG-02-P06.png" style="width: 100%;">
+
+                            </div>
+                            <div class="col-sm-4">
+                                <h4>Optimized Proposal 2</h4>
+                                <dd><b>85%</b> area above medium proximity to green space </dd>
+                                <dd><b>90%</b> area above medium proximity to commercial </dd>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="row testing">
+                <img src="./img/diagrams/Land Use AXO/Site01AXO.png" class="axo-img">
+            </div>
+            <div class="container" id="pano-container-mck1">
+                <div id="panoramas-mck1" class="container  panorama">
+                    
+                    <div id="panorama-mck1"></div>
+                    <script>
+                        pannellum.viewer('panorama-mck1', {
+                           "default": {
+                               "firstScene":"sf01",
+                               "sceneFadeDuration": 1000
+                            },
+                            "hotSpotDebug": true,
+                            'scenes': {
+                                'sf01': {
+                                   "type":"equirectangular",
+                                   "panorama":"./img/Latest Panorama/Site01-SFH/1_Scene01 - Residential Block.jpg",
+                                   "hotSpots": [{
+                                        'pitch': -7.010610791065726,
+                                        'yaw': 35.786519599404485,
+                                       "type":"info",
+                                       "text":"Delivery bot completes local errands",
+                                    },
+                                    {
+                                        'pitch': -9.114808446195298,
+                                        'yaw':74.20858212838908,
+                                       "type":"info",
+                                       "text":"Micro-mobility center allows for local transportation",
+                                    },
+                                    {
+                                       "pitch": -9.4,
+                                       "yaw": 222.6,
+                                       "type":"scene",
+                                        'sceneId': 'sf02',
+                                       "text":"Multi-modal roadway allows for range of vehicle types"
+                                    },{
+                                       "pitch": -3.284025872590559,
+                                       "yaw": -172.6725880279672,
+                                       "type":"info",
+                                       "text":"Shared mobility vehicles provide intra-neighborhood transportation"
+                                    }]
+                                },
+                                'sf02': {
+                                   "type":"equirectangular",
+                                   "panorama":"./img/Latest Panorama/Site01-SFH/1_Scene02 - Intersection.jpg",
+                                   "hotSpots": [{
+                                        'pitch': -6.384251861408728,
+                                        'yaw': 99.47726404002432,
+                                       "type":"info",
+                                       "text":"Delivery bot completes local errands",
+                                    }, {
+                                       "pitch": -9.4,
+                                       "yaw": 222.6,
+                                       "type":"info",
+                                       "text":"Multi-modal roadway allows for range of vehicle types"
+                                    }, {
+                                       "pitch": 32.94207121263481,
+                                       "yaw": 140.21455374078752,
+                                       "type":"info",
+                                       "text":"Drones complete local deliveries from dispatch center"
+                                    }, {
+                                       "pitch": -1.8268075828856765,
+                                       "yaw": -167.2843723027745,
+                                       "type":"scene",
+                                        'sceneId': 'sf03',
+                                       "text":"Shared mobility vehicles provide intra-neighborhood transportation"
+                                    }]
+                                },
+                                'sf03': {
+                                   "type":"equirectangular",
+                                   "panorama":"./img/Latest Panorama/Site01-SFH/1_Scene03 - Neighborhood Commercial.jpg",
+                                   "hotSpots": [{
+                                        'pitch': -6.384251861408728,
+                                        'yaw': 99.47726404002432,
+        
+                                       "type":"info",
+                                        'sceneId': 'sf03',
+                                       "text":"Delivery bot completes local errands",
+                                    }, {
+                                       "pitch": -9.4,
+                                       "yaw": 222.6,
+                                       "type":"info",
+                                       "text":"Multi-modal roadway allows for range of vehicle types"
+                                    }, {
+                                       "pitch": 26.641169242072987,
+                                       "yaw": -78.27890228176045,
+                                       "type":"info",
+                                       "text":"Drones complete local deliveries from dispatch center"
+                                    }, {
+                                       "pitch": -1.8268075828856765,
+                                       "yaw": -167.2843723027745,
+                                       "type":"info",
+                                       "text":"Shared mobility vehicles provide intra-neighborhood transportation"
+                                    }]
+                                },
+        
+                            }
+                        });
+                    </script>
+                </div>
+                
+            </div>
+        </div>
+
+
+        <hr class="quarter-gap">
+        <div class="container section-container" id="mck-2">
+            <h1 class="header-align">Commercial Center + Residential + Corridor District</h1>
+            <div class="row testing section-align">
+                <div class="col-md-6">
+                    <div class="vertical-align-center">
+                        <h3>Optimization Process</h3>
+                        <p>
+                            By redistributing a traditional commercial cluster,
+                            smaller retail spaces operate as a highway
+                            screening scheme with the capacity to better
+                            link the surrounding residential community to a
+                            regional open space system. 
+                        </p>
+                        <div class="row vertical-align-center">
+                            <div class="col-sm-4">
+                                <a href='#single-family-residential'> <img class='legend-image' src="./img/diagrams/Land Use Legend/SFH.png"></a>
+                                <a href='#town-center'> <img class='legend-image' src="./img/diagrams/Land Use Legend/TC.png"></a>
+                            </div>
+                            <div class="col-sm-4">
+                                <img class='legend-image' src="./img/diagrams/Land Use Legend/Riparian.png">
+                                <img class='legend-image' src="./img/diagrams/Land Use Legend/GS.png">
+                            </div>
+                            <div class="col">
+                                <img class='legend-image' id='single-family-residential-vertical' src="./img/diagrams/Land Use Optimization/Mckinney Site02/Vertical Bar_Before.png">
+                            </div>
+
+                        </div>
+                        <button id='toggle-a2'>Compare Before and After</button>
+                    </div>
+
+                </div>
+                <div class="col-md-6">
+                    <h2 id='a2-title'>Existing Land Use Plan</h2>
+                    <img class='a2-atom hide-img lu-plan-img' src="./img/diagrams/Land Use Optimization/Mckinney Site02/Site02Before.png">
+                </div>
+            </div>
+
+            <script>
+                var a2Buttons = document.getElementsByClassName('a2-atom')
+                var a2Toggle = document.getElementById('toggle-a2')
+                var a2Title = document.getElementById('a2-title')
+                var a2bars = document.getElementById('single-family-residential-vertical')
+                a2Toggle.addEventListener('click', function() {
+                    for (var a in a2Buttons) {
+
+                        if (a2Buttons[a].classList.contains('hide-img')) {
+                            $(a2Buttons[a]).attr('src', optImgs['a2']['opt']).fadeIn('slow');
+                            a2bars.setAttribute('src', './img/diagrams/Land Use Optimization/Mckinney Site02/Vertical Bar_After.png')
+                            a2Title.innerHTML = 'Optimized'
+                        } else {
+                            // a1Buttons[a].setAttribute('src', optImgs['a1']['ex'])
+                            $(a2Buttons[a]).attr('src', optImgs['a2']['ex']).fadeIn('slow');
+                            a2bars.setAttribute('src', './img/diagrams/Land Use Optimization/Mckinney Site02/Vertical Bar_Before.png')
+                            a2Title.innerHTML = 'Existing Land Use Plan'
+                        }
+                        a2Buttons[a].classList.toggle('hide-img')
+                    }
+                })
+            </script>
+
+
+            <hr>
+            <div class="row testing plan-align">
+                <h2>District Master Plan</h2>
+                <div class="col-md-6">
+                    <img class="lu-plan" src='./img/Proposed Plan/McKinney Site 02/McKinney Site02_Landuse.png'>
+                </div>
+                <div class="col-md-6">
+                    <img class="lu-plan" src='./img/Proposed Plan/McKinney Site 02/McKinney Site02_Fabric.png'>
+                </div>
+            </div>
+            <div class="row testing">
+                <hr>
+                <h2 class="header-align">Proximity Analysis</h2>
+                <div class="row testing section-align">
+                    <div class="col-md-6">
+                        <div class="row">
+                            
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <img src=".\img\diagrams\Land Use Plan Analysis\Site02\IMG-01.png" style="width: 160%;">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6">
+                        <div class="row analysis-row">
+                            <div class="col-sm-3">
+                                <img src=".\img\diagrams\Land Use Plan Analysis\Site02\IMG-02-P01.png" style="width: 100%;">
+                            </div>
+                            <div class="col-sm-3">
+                                <img src=".\img\diagrams\Land Use Plan Analysis\Site02\IMG-02-P02.png" style="width: 100%;">
+                            </div>
+                            <div class="col-sm-4">
+                                <h4>Existing Proposal</h4>
+                                <dd><b>40%</b> area above medium proximity to commercial </dd>
+                                <dd><b>14-16 access points</b> based on two entrances per side </dd>
+                            </div>
+                        </div>
+                        <div class="row analysis-row">
+                            <div class="col-sm-3">
+                                <img src=".\img\diagrams\Land Use Plan Analysis\Site02\IMG-02-P03.png" style="width: 100%;">
+                            </div>
+                            <div class="col-sm-3">
+                                <img src=".\img\diagrams\Land Use Plan Analysis\Site02\IMG-02-P04.png" style="width: 100%;">
+
+                            </div>
+                            <div class="col-sm-4">
+                                <h4>Optimized Proposal</h4>
+                                <dd><b>55%</b> area above medium proximity to commercial</dd>
+                                <dd><b>30-35 access points</b> based on two entrances per side</dd>
+                            </div>
+                        </div>
+                        <div class="row analysis-row">
+                            <div class="col-sm-3">
+                                <img src=".\img\diagrams\Land Use Plan Analysis\Site02\IMG-02-P05.png" style="width: 100%;">
+                            </div>
+                            <div class="col-sm-3">
+                                <img src=".\img\diagrams\Land Use Plan Analysis\Site02\IMG-02-P06.png" style="width: 100%;">
+
+                            </div>
+                            <div class="col-sm-4">
+                                <h4>Optimized Proposal with corridor</h4>
+                                <dd><b>70%</b> area above medium proximity to commercial</dd>
+                                <dd><b>+2</b> green spaces to connect to commercial space</dd>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="row testing">
+                <img src="./img/diagrams/Land Use AXO/Site02AXO.png" class="axo-img">
+            </div>
+            <!-- <hr> -->
+            <div class="container" id="pano-container-mck2">
+                <div id="panoramas-mck2" class="container  panorama">
+                    
+                    <div id="panorama-mck2"></div>
+                    <script>
+                        pannellum.viewer('panorama-mck2', {
+                           "default": {
+                               "firstScene":"sf01",
+                               "sceneFadeDuration": 1000
+                            },
+                            'scenes': {
+                                'sf01': {
+                                   "type":"equirectangular",
+                                   "panorama":"./img/Latest Panorama/Site02-Commercial Center/1_Plaza.jpg",
+                                   "hotSpots": [{
+                                        'pitch': -6.384251861408728,
+                                        'yaw': 99.47726404002432,
+                                       "type":"info",
+                                       "text":"Delivery bot completes local errands",
+                                    }, {
+                                       "pitch": -9.4,
+                                       "yaw": 222.6,
+                                       "type":"scene",
+                                        'sceneId': 'sf02',
+                                       "text":"Multi-modal roadway allows for range of vehicle types"
+                                    }, {
+                                       "pitch": 26.641169242072987,
+                                       "yaw": -78.27890228176045,
+                                       "type":"info",
+                                       "text":"Drones complete local deliveries from dispatch center"
+                                    }, {
+                                       "pitch": -1.8268075828856765,
+                                       "yaw": -167.2843723027745,
+                                       "type":"info",
+                                       "text":"Shared mobility vehicles provide intra-neighborhood transportation"
+                                    }]
+                                },
+                                'sf02': {
+                                   "type":"equirectangular",
+                                   "panorama":"./img/Latest Panorama/Site02-Commercial Center/1_Rooftop.jpg",
+                                   "hotSpots": [{
+                                        'pitch': -6.384251861408728,
+                                        'yaw': 99.47726404002432,
+                                       "type":"info",
+                                       "text":"Delivery bot completes local errands",
+                                    }, {
+                                       "pitch": -9.4,
+                                       "yaw": 222.6,
+                                       "type":"info",
+                                       "text":"Multi-modal roadway allows for range of vehicle types"
+                                    }, {
+                                       "pitch": 26.641169242072987,
+                                       "yaw": -78.27890228176045,
+                                       "type":"info",
+                                       "text":"Drones complete local deliveries from dispatch center"
+                                    }, {
+                                       "pitch": -1.8268075828856765,
+                                       "yaw": -167.2843723027745,
+                                       "type":"scene",
+                                        'sceneId': 'sf03',
+                                       "text":"Shared mobility vehicles provide intra-neighborhood transportation"
+                                    }]
+                                },
+                            }
+                        });
+                    </script>
+                </div>
+            </div>
+
+        </div>
+        <hr class="quarter-gap">
+        <div class="container section-container" id="mck-3">
+            <h1 class="header-align">Employment + TOD District</h1>
+            <div class="row testing section-align">
+                <div class="col-md-6">
+                    <div class="vertical-align-center">
+                        <h3>Optimization Process</h3>
+                        <p>
+                            By breaking apart large, contiguous employment
+                            clusters, and integrating them with higher-density
+                            residential areas, a finer-grained suburban fabric
+                            emerges with the capacity to cater more explicitly
+                            to pedestrians, and micro-transit users. This
+                            atomization is designed to facilitate opportunities
+                            for autonomous transit oriented development. 
+                        </p>
+
+                        <div class="row vertical-align-center">
+                            <div class="col-sm-4">
+                                <a href='#employment-mix'><img class='legend-image' src="./img/diagrams/Land Use Legend/EM.png"> </a>
+                                <a href='#estate-residential0'> <img class='legend-image' src="./img/diagrams/Land Use Legend/PC.png"> </a>
+                            </div>
+                            <div class="col-sm-4">
+                                <a href='#commercial-center'> <img class='legend-image' src="./img/diagrams/Land Use Legend/CC.png"></a>
+                                <a href='#urban-living'><img class='legend-image' src="./img/diagrams/Land Use Legend/UL.png"> </a>
+                            </div>
+                            <div class="col">
+                                <img class='legend-image' id='lu3-vertical' src="./img/diagrams/Land Use Optimization/Mckinney Site03/Vertical Bar_Before.png">
+                            </div>
+
+                        </div>
+
+                        <button id='toggle-a3'>Compare Before and After</button>
+                    </div>
+
+                </div>
+                <div class="col-md-6">
+                    <h2 id="a3-title">Existing Land Use Plan</h2>
+                    <img class='a3-atom hide-img lu-plan-img' src="./img/diagrams/Land Use Optimization/Mckinney Site03/Site03Before.png">
+                </div>
+            </div>
+
+            <script>
+                var a3Buttons = document.getElementsByClassName('a3-atom')
+                var a3Toggle = document.getElementById('toggle-a3')
+                var a3Title = document.getElementById('a3-title')
+                var a3button = document.getElementById('lu3-vertical')
+                a3Toggle.addEventListener('click', function() {
+                    for (var a in a3Buttons) {
+
+                        if (a3Buttons[a].classList.contains('hide-img')) {
+                            $(a3Buttons[a]).attr('src', optImgs['a3']['opt']).fadeIn('slow');
+                            a3button.setAttribute('src', './img/diagrams/Land Use Optimization/Mckinney Site03/Vertical Bar_After.png')
+                            a3Title.innerHTML = 'Optimized'
+                        } else {
+                            // a1Buttons[a].setAttribute('src', optImgs['a1']['ex'])
+                            $(a3Buttons[a]).attr('src', optImgs['a3']['ex']).fadeIn('slow');
+                            a3button.setAttribute('src', './img/diagrams/Land Use Optimization/Mckinney Site03/Vertical Bar_Before.png')
+                            a3Title.innerHTML = 'Esixting Land Use Plan'
+                        }
+                        a3Buttons[a].classList.toggle('hide-img')
+                    }
+                })
+            </script>
+<hr>
+            <div class="row testing plan-align">
+                <h2>Proposed District Master Plan</h2>
+                <div class="col-md-6">
+                    <img class="lu-plan" src='./img/Proposed Plan/McKinney Site 03/McKinney Site03_Landuse.png'>
+                </div>
+                <div class="col-md-6">
+                    <img class="lu-plan" src='./img/Proposed Plan/McKinney Site 03/McKinney Site03_Fabric.png'>
+                </div>
+            </div>
+            <div class="row testing">
+                <hr>
+                <h2 class="header-align">Proximity Analysis</h2>
+                <div class="row testing section-align">
+                    <div class="col-md-6">
+                        <div class="row">
+                            
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <img src=".\img\diagrams\Land Use Plan Analysis\Site03\IMG-01.png" style="width: 160%;">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6">
+                        <div class="row analysis-row">
+                            <div class="col-sm-3">
+                                <img src=".\img\diagrams\Land Use Plan Analysis\Site03\IMG-02-P01.png" style="width: 100%;">
+                            </div>
+                            <div class="col-sm-3">
+                                <img src=".\img\diagrams\Land Use Plan Analysis\Site03\IMG-02-P02.png" style="width: 100%;">
+                            </div>
+                            <div class="col-sm-3">
+                                <h4>Existing Proposal</h4>
+                                <dd><b>55%</b> area above medium proximity to professional campus </dd>
+                                <dd><b>60%</b> area above medium proximity to commercial </dd>
+                            </div>
+                        </div>
+                        <div class="row analysis-row">
+                            <div class="col-sm-3">
+                                <img src=".\img\diagrams\Land Use Plan Analysis\Site03\IMG-02-P03.png" style="width: 100%;">
+                            </div>
+                            <div class="col-sm-3">
+                                <img src=".\img\diagrams\Land Use Plan Analysis\Site03\IMG-02-P04.png" style="width: 100%;">
+
+                            </div>
+                            <div class="col-sm-3">
+                                <h4>Optimized Proposal 1</h4>
+                                <dd><b>85%</b> area above medium proximity to professional campus </dd>
+                                <dd><b>100%</b> area above medium proximity to commercial </dd>
+                            </div>
+                        </div>
+                        <div class="row analysis-row">
+                            <div class="col-sm-3">
+                                <img src=".\img\diagrams\Land Use Plan Analysis\Site03\IMG-02-P05.png" style="width: 100%;">
+                            </div>
+                            <div class="col-sm-3">
+                                <img src=".\img\diagrams\Land Use Plan Analysis\Site03\IMG-02-P06.png" style="width: 100%;">
+
+                            </div>
+                            <div class="col-sm-3">
+                                <h4>Transit Corridor</h4>
+                                <dd><b>+40%</b> additional employment access </dd>
+                                <dd><b>+55%</b> additional commercial access</dd>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="row testing">
+                <img src="./img/diagrams/Land Use AXO/Site03AXO.png" class="axo-img">
+            </div>
+            <hr>
+            <!-- other pannelum -->
+            <div class="container" id="pano-container-mck3">
+                <div id="panoramas-mck3" class="container panorama">
+                    
+                    <div id="panorama-mck3"></div>
+                    <script>
+                        pannellum.viewer('panorama-mck3', {
+                           "default": {
+                               "firstScene":"sf01",
+                               "sceneFadeDuration": 1000
+                            },
+                            'scenes': {
+                                'sf01': {
+                                   "type":"equirectangular",
+                                   "panorama":"./img/Latest Panorama/Site03-Employment/1_ACTIVE STREETSCAPE_MORNING.jpg",
+                                   "hotSpots": [{
+                                        'pitch': -6.384251861408728,
+                                        'yaw': 99.47726404002432,
+                                       "type":"info",
+                                       "text":"Delivery bot completes local errands",
+                                    }, {
+                                       "pitch": -9.4,
+                                       "yaw": 222.6,
+                                       "type":"scene",
+                                        'sceneId': 'sf02',
+                                       "text":"Multi-modal roadway allows for range of vehicle types"
+                                    }, {
+                                       "pitch": 26.641169242072987,
+                                       "yaw": -78.27890228176045,
+                                       "type":"info",
+                                       "text":"Drones complete local deliveries from dispatch center"
+                                    }, {
+                                       "pitch": -1.8268075828856765,
+                                       "yaw": -167.2843723027745,
+                                       "type":"info",
+                                       "text":"Shared mobility vehicles provide intra-neighborhood transportation"
+                                    }]
+                                },
+                                'sf02': {
+                                   "type":"equirectangular",
+                                   "panorama":"./img/Latest Panorama/Site03-Employment/1_FLEXIBLE CO-WORKING_SUNSET.jpg",
+                                   "hotSpots": [{
+                                        'pitch': -6.384251861408728,
+                                        'yaw': 99.47726404002432,
+                                       "type":"info",
+                                       "text":"Delivery bot completes local errands",
+                                    }, {
+                                       "pitch": -9.4,
+                                       "yaw": 222.6,
+                                       "type":"info",
+                                       "text":"Multi-modal roadway allows for range of vehicle types"
+                                    }, {
+                                       "pitch": 26.641169242072987,
+                                       "yaw": -78.27890228176045,
+                                       "type":"info",
+                                       "text":"Drones complete local deliveries from dispatch center"
+                                    }, {
+                                       "pitch": -1.8268075828856765,
+                                       "yaw": -167.2843723027745,
+                                       "type":"scene",
+                                        'sceneId': 'sf03',
+                                       "text":"Shared mobility vehicles provide intra-neighborhood transportation"
+                                    }]
+                                },
+                                'sf03': {
+                                   "type":"equirectangular",
+                                   "panorama":"./img/Latest Panorama/Site03-Employment/2_ACTIVE STREETSCAPE_DAYTIME.jpg",
+                                   "hotSpots": [{
+                                        'pitch': -6.384251861408728,
+                                        'yaw': 99.47726404002432,
+        
+                                       "type":"scene",
+                                        'sceneId': 'sf03',
+                                       "text":"Delivery bot completes local errands",
+                                    }, {
+                                       "pitch": -9.4,
+                                       "yaw": 222.6,
+                                       "type":"info",
+                                       "text":"Multi-modal roadway allows for range of vehicle types"
+                                    }, {
+                                       "pitch": 26.641169242072987,
+                                       "yaw": -78.27890228176045,
+                                       "type":"info",
+                                       "text":"Drones complete local deliveries from dispatch center"
+                                    }, {
+                                       "pitch": -1.8268075828856765,
+                                       "yaw": -167.2843723027745,
+                                       "type":"info",
+                                       "text":"Shared mobility vehicles provide intra-neighborhood transportation"
+                                    }]
+                                },
+        
+                            }
+                        });
+                    </script>
+                </div>
+            </div>
+        </div>
+
+        <hr class="quarter-gap"> 
+        <div class="container section-container" id="v-1">
+            <h1 class="header-align">Mixed Use Development District</h1>
+            <div class="row testing section-align">
+                <div class="col-md-6">
+                    <div class="vertical-align-center">
+                        <h3>Optimization Process</h3>
+                        <p>
+                            By redistributing commercial clusters and higherdensity housing throughout the neighborhood,
+                            a finer-grained suburban fabric emerges with
+                            the capacity to connect better to regional transit
+                            systems, while providing equitable access to
+                            micro-mobility hubs. The integration of multiple
+                            residential typologies produces a more dynamic,
+                            socially integrated district overall.
+                        </p>
+                        <div class="row vertical-align-center">
+                            <div class="col-sm-4">
+                                <a href='#single-family-residential'><img class='legend-image' src="./img/diagrams/Land Use Legend/SFH.png"></a>
+                                <a href='#multi-family-residential'><img class='legend-image' src="./img/diagrams/Land Use Legend/MFH.png"> </a>
+                                <img class='legend-image' src="./img/diagrams/Land Use Legend/GS.png">
+                            </div>
+                            <div class="col-sm-4">
+                                <a href='#town-center'><img class='legend-image' src="./img/diagrams/Land Use Legend/TC.png"> </a>
+                                <img class='legend-image' src="./img/diagrams/Land Use Legend/TH&DUPLEX.png">
+                                <img class='legend-image' src="./img/diagrams/Land Use Legend/Riparian.png">
+                            </div>
+                            <div class="col">
+                                <img class='legend-image' id='multi-family-residential-vertical' src="./img/diagrams/Land Use Optimization/VIDA SITE/Vertical Bar_Before.png">
+                            </div>
+
+                        </div>
+                        <button id='toggle-a4'>Compare Before and After</button>
+                    </div>
+
+                </div>
+                <div class="col-md-6">
+                    <h2 id="a4-title">Existing Land Use Plan</h2>
+                    <img class='a4-atom hide-img lu-plan-img' src="./img/diagrams/Land Use Optimization/VIDA SITE/VIDA Before.png">
+                </div>
+            </div>
+
+            <script>
+                var a4Buttons = document.getElementsByClassName('a4-atom')
+                var a4Toggle = document.getElementById('toggle-a4')
+                var a4Title = document.getElementById('a4-title')
+                var a4button = document.getElementById('multi-family-residential-vertical')
+                a4Toggle.addEventListener('click', function() {
+                    for (var a in a4Buttons) {
+
+                        if (a4Buttons[a].classList.contains('hide-img')) {
+                            $(a4Buttons[a]).attr('src', optImgs['a4']['opt']).fadeIn('slow');
+                            a4button.setAttribute('src', './img/diagrams/Land Use Optimization/VIDA SITE/Vertical Bar_After.png')
+                            a4Title.innerHTML = 'Optimized'
+                        } else {
+                            // a1Buttons[a].setAttribute('src', optImgs['a1']['ex'])
+                            $(a4Buttons[a]).attr('src', optImgs['a4']['ex']).fadeIn('slow');
+                            a4button.setAttribute('src', './img/diagrams/Land Use Optimization/VIDA SITE/Vertical Bar_Before.png')
+                            a4Title.innerHTML = 'Existing Land Use Plan'
+                        }
+                        a4Buttons[a].classList.toggle('hide-img')
+                    }
+                })
+            </script>
+<hr>
+            <div class="row testing plan-align">
+                <h2>Proposed District Master Plan</h2>
+                <div class="col-md-6">
+                    <img class="lu-plan" src='./img/Proposed Plan/VIDA/VIDA_Landuse.png'>
+                </div>
+                <div class="col-md-6">
+                    <img class="lu-plan" src='./img/Proposed Plan/VIDA/VIDA_Fabric.png'>
+                </div>
+            </div>
+            <div class="row testing">
+                <hr>
+                <h2 class="header-align">Proximity Analysis</h2>
+                <div class="row testing plan-align">
+                    <div class="col-md-6">
+                        <div class="row">
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <img src=".\img\diagrams\Land Use Plan Analysis\Site04(VIDA)\IMG-01.png" style="width: 160%;">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6">
+                        <div class="row analysis-row">
+                            <div class="col-sm-3">
+                                <img src=".\img\diagrams\Land Use Plan Analysis\Site04(VIDA)\IMG-02-P01.png" style="width: 100%;">
+                            </div>
+                            <div class="col-sm-3">
+                                <img src=".\img\diagrams\Land Use Plan Analysis\Site04(VIDA)\IMG-02-P02.png" style="width: 100%;">
+                            </div>
+                            <div class="col-sm-3">
+                                <h4>Existing Proposal</h4>
+                                <dd><b>15%</b> area above medium proximity to green space </dd>
+                                <dd><b>25%</b> area above medium proximity to commercial</dd>
+                            </div>
+                        </div>
+                        <div class="row analysis-row">
+                            <div class="col-sm-3">
+                                <img src=".\img\diagrams\Land Use Plan Analysis\Site04(VIDA)\IMG-02-P03.png" style="width: 100%;">
+                            </div>
+                            <div class="col-sm-3">
+                                <img src=".\img\diagrams\Land Use Plan Analysis\Site04(VIDA)\IMG-02-P04.png" style="width: 100%;">
+
+                            </div>
+                            <div class="col-sm-3">
+                                <h4>Optimized Proposal</h4>
+                                <dd><b>40%</b> area above medium proximity to green space </dd>
+                                <dd><b>45%</b> area above medium proximity to commercial</dd>
+                            </div>
+                        </div>
+                        <div class="row analysis-row">
+                            <div class="col-sm-3">
+                                <img src=".\img\diagrams\Land Use Plan Analysis\Site04(VIDA)\IMG-02-P05.png" style="width: 100%;">
+                            </div>
+                            <div class="col-sm-3">
+                                <img src=".\img\diagrams\Land Use Plan Analysis\Site04(VIDA)\IMG-02-P06.png" style="width: 100%;">
+
+                            </div>
+                            <div class="col-sm-3">
+                                <h4>Optimized Proposal with High Performance Corridors</h4>
+                                <dd><b>90%</b> area above medium proximity to green space </dd>
+                                <dd><b>60%</b> area above medium... </dd>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="row testing">
+                <img src="./img/diagrams/Land Use AXO/Site04VIDAAXO.png" class="axo-img">
+            </div>
+            <hr>
+            
+            <div class="container" id="pano-container-v1">
+                <div id="panoramas-v1" class="container  panorama">
+                    
+                    <div id="panorama-v1"></div>
+                    <script>
+                        pannellum.viewer('panorama-v1', {
+                           "default": {
+                               "firstScene":"sf01",
+                               "sceneFadeDuration": 1000
+                            },
+                            'scenes': {
+                                'sf01': {
+                                   "type":"equirectangular",
+                                   "panorama":"./img/Latest Panorama/Site04(VIDA)-MFH/1_Multi-Family Balcony 01.jpg",
+                                   "hotSpots": [{
+                                        'pitch': -6.384251861408728,
+                                        'yaw': 99.47726404002432,
+                                       "type":"info",
+                                       "text":"Delivery bot completes local errands",
+                                    }, {
+                                       "pitch": -9.4,
+                                       "yaw": 222.6,
+                                       "type":"scene",
+                                        'sceneId': 'sf02',
+                                       "text":"Multi-modal roadway allows for range of vehicle types"
+                                    }, {
+                                       "pitch": 26.641169242072987,
+                                       "yaw": -78.27890228176045,
+                                       "type":"info",
+                                       "text":"Drones complete local deliveries from dispatch center"
+                                    }, {
+                                       "pitch": -1.8268075828856765,
+                                       "yaw": -167.2843723027745,
+                                       "type":"info",
+                                       "text":"Shared mobility vehicles provide intra-neighborhood transportation"
+                                    }]
+                                },
+                                'sf02': {
+                                   "type":"equirectangular",
+                                   "panorama":"./img/Latest Panorama/Site04(VIDA)-MFH/1_Multi-Family Residential Central Corridor.jpg",
+                                   "hotSpots": [{
+                                        'pitch': -6.384251861408728,
+                                        'yaw': 99.47726404002432,
+                                       "type":"info",
+                                       "text":"Delivery bot completes local errands",
+                                    }, {
+                                       "pitch": -9.4,
+                                       "yaw": 222.6,
+                                       "type":"info",
+                                       "text":"Multi-modal roadway allows for range of vehicle types"
+                                    }, {
+                                       "pitch": 26.641169242072987,
+                                       "yaw": -78.27890228176045,
+                                       "type":"info",
+                                       "text":"Drones complete local deliveries from dispatch center"
+                                    }, {
+                                       "pitch": -1.8268075828856765,
+                                       "yaw": -167.2843723027745,
+                                       "type":"scene",
+                                        'sceneId': 'sf03',
+                                       "text":"Shared mobility vehicles provide intra-neighborhood transportation"
+                                    }]
+                                },
+                                'sf03': {
+                                   "type":"equirectangular",
+                                   "panorama":"./img/Latest Panorama/Site04(VIDA)-MFH/1_Multi-Family Residential Interior Corridor.jpg",
+                                   "hotSpots": [{
+                                        'pitch': -6.384251861408728,
+                                        'yaw': 99.47726404002432,
+        
+                                       "type":"scene",
+                                        'sceneId': 'sf03',
+                                       "text":"Delivery bot completes local errands",
+                                    }, {
+                                       "pitch": -9.4,
+                                       "yaw": 222.6,
+                                       "type":"info",
+                                       "text":"Multi-modal roadway allows for range of vehicle types"
+                                    }, {
+                                       "pitch": 26.641169242072987,
+                                       "yaw": -78.27890228176045,
+                                       "type":"info",
+                                       "text":"Drones complete local deliveries from dispatch center"
+                                    }, {
+                                       "pitch": -1.8268075828856765,
+                                       "yaw": -167.2843723027745,
+                                       "type":"info",
+                                       "text":"Shared mobility vehicles provide intra-neighborhood transportation"
+                                    }]
+                                },
+        
+                            }
+                        });
+                    </script>
+                </div>
+            </div>
+        </div>
+        <hr class="quarter-gap">
+    </div>
+    
+    <div class="container body-white">
+        <div class="container">
+            <h1>Block Optimization</h1>
+            <p>
+                By redistributing commercial clusters and park space throughout the neighborhood, a finer-grained suburban fabric emerges with the capacity to cater more explicitly to pedestrians, and micro-transit users. This atomization is designed to reduce dependency
+                on long trips and to increase the co-benefits of heterogeneity more broadly.
+            </p>
+
+        </div>
+        <div class="row testing" style="padding-left: 15%">
+            <div class="column testing col-sm-4">
+                <h2>Residential</h2>
+                <div class="row testing">
+                    <a href="#single-family-residential"><img class="legend-image-index" src="./img/diagrams/Land Use Legend/SFH.png"></a>
+                    <a href="#multi-family-residential"><img class="legend-image-index" src="./img/diagrams/Land Use Legend/MFH.png"></a>
+                </div>
+                <div class="row testing">
+                    <a href="#estate-residential"><img class="legend-image-index" src="./img/diagrams/Land Use Legend/ER.png"></a>
+                    <a href="#urban-living"> <img class="legend-image-index" src="./img/diagrams/Land Use Legend/UL.png"></a>
+                </div>
+                <div class="row testing">
+                    <img class="legend-image-index" src="./img/diagrams/Land Use Legend/TH&DUPLEX.png">
+                </div>
+            </div>
+            <div class="column testing col-sm-2">
+                <h2>Commercial</h2>
+                <div class="row testing">
+                    <img class="legend-image-index" src="./img/diagrams/Land Use Legend/TC.png">
+                </div>
+                <div class="row testing">
+                    <a href="#commercial-center"> <img class="legend-image-index" src="./img/diagrams/Land Use Legend/CC.png"> </a>
+                </div>
+                <div class="row testing">
+                    <a href="#neighborhood-commercial"><img class="legend-image-index" src="./img/diagrams/Land Use Legend/NC.png"></a>
+                </div>
+            </div>
+            <div class="column testing col-sm-2">
+                <h2>Landscape</h2>
+                <div class="row testing">
+                    <img class="legend-image-index" src="./img/diagrams/Land Use Legend/Riparian.png">
+                </div>
+                <div class="row testing">
+                    <img class="legend-image-index" src="./img/diagrams/Land Use Legend/GS.png">
+                </div>
+                <div class="row testing"></div>
+            </div>
+            <div class="column testing col-sm-2">
+                <div class="row testing">
+                    <h2>Employment</h2>
+                </div>
+                <div class="row testing">
+                    <a href="#professional-campus"><img class="legend-image-index" src="./img/diagrams/Land Use Legend/PC.png"></a>
+                </div>
+                <div class="row testing">
+                    <a href="#employment-mix"> <img class="legend-image-index" src="./img/diagrams/Land Use Legend/EM.png"> </a>
+                </div>
+            </div>
+        </div>
+        <hr>
+
+
+    </div>
+
+
+
+
+    <div id="land-uses-1">
+        <div class="container body-black" id="estate-residential">
+            <h1>Estate Residential</h1>
+        </div>
+
+
+        <div class="container section-white">
+            <h1 style="margin-left: 15%;">Existing Conditions</h1>
+            <div class="row justify-content-md-left"  style="padding-left: 15%;">
+                <div class="col col-lg-5">
+                    <p>
+                        Ultra-low density single family districts are typically located far away from
+                        regional commercial areas, employment campuses, and regional parks which
+                        makes them highly dependent on excessive daily vehicular trips. These
+                        large lots are typically landscaped with lawn, which, due to it’s high water
+                        and maintenance requirements, is a carbon and energy intensive material,
+                        adding to the already high consumption footprints of these land uses. In
+                        the future, these areas offer opportunities for rethinking the role of shared
+                        transportation, and the co-location of local remote office space. 
+                    </p>
+                    
+                </div>
+                
+            </div>
+            <div class="row justify-content-md-left"  style="padding-left: 15%;">
+                <img class="study-grid-img "  src="./img/lu_study/01_Estate Residential/Plan_Aerial.png">
+                <img class="study-grid-img "  src="./img/lu_study/01_Estate Residential/Plan_Drawing.png">
+                <img class="study-grid-img " src="./img/lu_study/01_Estate Residential/Street View.png">
+                <img class="study-grid-img " src="./img/lu_study/01_Estate Residential/Chart.png">
+            </div>
+        </div>        
+
+        <div class="container body-white">
+            <hr>
+            <h1 class="indent">Phasing Strategies</h1>
+            <div class="row">
+                <img src="./img/slu/00_Pure Line Work/Estate Residential AXO_Hang over Chart.png" class="axo-legend">
+            </div>
+
+            <div id="stage-buttons" class="btn-group btn-group-toggle indent" data-toggle="buttons">
+                <label class="btn btn-secondary active stage-button-er" id='ec-er'>
+                    <input type="radio" name="options"  autocomplete="off" checked> Existing Conditions
+                  </label>
+                <label class="btn btn-secondary  stage-button-er" id='ad1-er'>
+                    <input type="radio" name="options"  autocomplete="off" checked> AD1
+                  </label>
+                <label class="btn btn-secondary  stage-button-er" id='ad2-er'>
+                    <input type="radio" name="options" autocomplete="off" checked> AD2
+                </label>
+            </div>
+            <div id="lu-text" style="width: 70%;">
+
+            </div>
+            <div id="lu-image-er" class="quarter-gap">
+                <img id='lu-img-er' src=".\img\slu\01_Estate Residential\00_ER_EXISTING.png" style="width:55%; margin-left:20%">
+            </div>
+            <script>
+                slus = {
+    'er': {
+        'ec-er': './img/slu/01_Estate Residential/00_ER_EXISTING.png',
+        'ad1-er': './img/slu/01_Estate Residential/01_ER_AD1.png',
+        'ad2-er': './img/slu/01_Estate Residential/02_ER_AD2.png'
+    },
+    'sfr': {
+        'ec-sfr': './img/slu/02_Single Family Residential/00_SFH_EXISTING.png',
+        'ad1-sfr': './img/slu/02_Single Family Residential/01_SFH_AD1.png',
+        'ad2-sfr': './img/slu/02_Single Family Residential/02_SFH_AD2.png'
+    },
+    'mfr': {
+        'ec-mfr': './img/slu/04_Multi-Family Residential/00_MFH_EXISTING.png',
+        'ad1-mfr': './img/slu/04_Multi-Family Residential/01_MFH_AD1.png',
+        'ad2-mfr': './img/slu/04_Multi-Family Residential/02_MFH_AD2.png'
+    },
+    'nc': {
+        'ec-nc': './img/slu/06_Neighborhood Commercial/00_NC_EXISTING.png',
+        'ad1-nc': './img/slu/06_Neighborhood Commercial/01_NC_AD1.png',
+        'ad2-nc': './img/slu/06_Neighborhood Commercial/02_NC_AD2.png'
+    },
+    'pc': {
+        'ec-pc': './img/slu/10_Professional Campus/00_PC_EXISTING.png',
+        'ad1-pc': './img/slu/10_Professional Campus/01_PC_AD1.png',
+        'ad2-pc': './img/slu/10_Professional Campus/02_PC_AD2.png'
+    }
+}
+
+
+                var lu = 'er'
+                var stage = 'ec-er'
+                $(function() {
+                    $('.stage-button-er').click(function() {
+                        $('.stage-button-er.active').removeClass('active');
+                        $(this).addClass('active');
+
+                        stage = this.id
+                        var istring = slus['er'][this.id]
+                        console.log(istring)
+                        $('#lu-img-er').attr('src', istring)
+                    })
+                })
+            </script>
+            <div class="juxtapose" style="margin-left: 6.5%; width: 85%; max-height: 900px;">
+                <img src="./img/Sliders/Estate Residential/ER_Before.png" data-label="Present Day" />
+                <img src="./img/Sliders/Estate Residential/ER_After.png" data-label="Optimized Future" />
+            </div>
+            <hr>
+        </div>
+
+
+
+
+
+
+
+        <div class="container body-black" id="single-family-residential">
+            <h1>Single-Family Residential</h1>
+        </div>
+        <div class="container section-white">
+            <h1 style="margin-left: 15%;">Existing Conditions</h1>
+            <div class="row justify-content-md-left"  style="padding-left: 15%;">
+                <div class="col col-lg-5">
+                    <p>
+                        Suburban Living areas are found in close proximity to neighborhood commercial and commercial centers and provide rooftops necessary to support the commercial and professional office uses within the corridors. These neighborhoods are generally formed as
+                        subdivisions. Residential uses-oriented interior to the site is typically buffered from surrounding development by transitional uses or landscaped areas. Lot sizes in a Suburban Living area typically less than 1/2 acre.
+                    </p>
+                    
+                </div>
+                
+            </div>
+            <div class="row justify-content-md-left"  style="padding-left: 15%;">
+                <img class="study-grid-img "  src="./img/lu_study/02_Singlefamily Residential/PLAN_Aerial.png">
+                <img class="study-grid-img "  src="./img/lu_study/02_Singlefamily Residential/PLAN_Drawing.png">
+                <img class="study-grid-img " src="./img/lu_study/02_Singlefamily Residential/Street View.png">
+                <img class="study-grid-img " src="./img/lu_study/02_Singlefamily Residential/Chart.png">
+            </div>
+        </div>
+            
+        
+
+
+        <div class="container body-white">
+            <hr>
+            <h1 class="indent">Phasing Strategies</h1>
+            <div class="row">
+                <img src="./img/slu/00_Pure Line Work/SFH AXO01_Hang over Chart.png" class="axo-legend">
+            </div>
+
+            <div id="stage-buttons" class="btn-group btn-group-toggle indent" data-toggle="buttons">
+                <label class="btn btn-secondary active stage-button-sfr" id='ec-sfr'>
+                    <input type="radio" name="options"  autocomplete="off" checked> Existing Conditions
+                  </label>
+                <label class="btn btn-secondary stage-button-sfr" id='ad1-sfr'>
+                    <input type="radio" name="options"  autocomplete="off" checked> AD1
+                  </label>
+                <label class="btn btn-secondary stage-button-sfr" id='ad2-sfr'>
+                    <input type="radio" name="options" autocomplete="off" checked> AD2
+                </label>
+            </div>
+            <div id="lu-text" style="width: 70%;">
+
+            </div>
+            <div id="lu-image" class="quarter-gap">
+                <img id='lu-img-sfr' src="./img/slu/02_Single Family Residential/00_SFH_EXISTING.png" style="width:55%; margin-left:20%">
+            </div>
+            <script>
+                var lu = 'sfr'
+                var stage = 'ec-sfr'
+                $(function() {
+                    $('.stage-button-sfr').click(function() {
+                        $('.stage-button-sfr.active').removeClass('active');
+                        $(this).addClass('active');
+
+                        stage = this.id
+                        var istring = slus['sfr'][this.id]
+                        console.log(istring)
+                        $('#lu-img-sfr').attr('src', istring)
+                    })
+                })
+            </script>
+            
+            <div class="juxtapose" style="margin-left: 6.5%; width: 85%; max-height: 900px;">
+                <img src=".\img\Sliders\Single Family Residential\SFH_Before.png" data-label="Present Day" />
+                <img src=".\img\Sliders\Single Family Residential\SFH_After.png" data-label="Optimized Future" />
+            </div>
+            <hr>
+        </div>
+        <div class="container body-black" id="multi-family-residential">
+            <h1>Multi-Family Residential</h1>
+        </div>
+
+        <div class="container section-white">
+            <h1 style="margin-left: 15%;">Existing Conditions</h1>
+            <div class="row justify-content-md-left"  style="padding-left: 15%;">
+                <div class="col col-lg-5">
+                    <p>
+                        Multi-family housing makes up less than 14 percent of all residential land
+                        uses in the US today. Nevertheless, there is a significant demand for more
+                        affordable housing in general - especially in the suburbs where high-end
+                        development has dominated the market since the great recession. Today’s
+                        multifamily residential areas typically feature 2 parking spaces per unit, and
+                        often lack meaningful space for recreation in spite of the public health values
+                        that access to open space can provide. As cities across the country struggle
+                        to update zoning codes to include more “missing middle” housing, from
+                        town homes to higher-density models, this category is a major innovation
+                        opportunity area.
+                    </p>
+                    
+                </div>
+                
+            </div>
+            <div class="row justify-content-md-left"  style="padding-left: 15%;">
+                <img class="study-grid-img "  src="./img/lu_study/04_Multi-family Residential/Plan_Aerial.png">
+                <img class="study-grid-img "  src="./img/lu_study/04_Multi-family Residential/Plan_Drawing.png">
+                <img class="study-grid-img " src="./img/lu_study/04_Multi-family Residential/Street View.png">
+                <img class="study-grid-img " src="./img/lu_study/04_Multi-family Residential/Chart.png">
+            </div>
+        </div>
+
+        <div class="container section-white">
+            <!-- <hr style="margin-top: 10px;"> -->
+            <h1 style="margin-left: 15%;">[Urban Living -Existing Conditions]</h1>
+            <div class="row justify-content-md-left"  style="padding-left: 15%;">
+            
+            <div class="row justify-content-md-left" >
+                <img class="study-grid-img "  src="./img/lu_study/05_Urban Living/Plan_Aerial.png">
+                <img class="study-grid-img "  src="./img/lu_study/05_Urban Living/Plan_Drawing.png">
+                <img class="study-grid-img " src="./img/lu_study/05_Urban Living/Street View.png">
+                <img class="study-grid-img " src="./img/lu_study/05_Urban Living/Chart.png">
+            </div>
+        </div>
+        
+        <div class="container body-white">
+            <hr>
+            <h1 class="indent">Phasing Strategies</h1>
+            <div class="row">
+                <img src="./img/slu/00_Pure Line Work/MFH AXO_Hang over Chart.png" class="axo-legend">
+            </div>
+            <div id="stage-buttons" class="btn-group btn-group-toggle indent" data-toggle="buttons">
+                <label class="btn btn-secondary active stage-button-mfr" id='ec-mfr'>
+                    <input type="radio" name="options"  autocomplete="off" checked> Existing Conditions
+                  </label>
+                <label class="btn btn-secondary active stage-button-mfr" id='ad1-mfr'>
+                    <input type="radio" name="options"  autocomplete="off" checked> AD1
+                  </label>
+                <label class="btn btn-secondary active stage-button-mfr" id="ad2-mfr">
+                    <input type="radio" name="options" autocomplete="off" checked> AD2
+                </label>
+            </div>
+            
+            <div id="lu-text" style="width: 70%;">
+
+            </div>
+            <div id="lu-image" class="quarter-gap">
+                <img id='lu-img-mfr' src="./img/slu/04_Multi-Family Residential/00_MFH_EXISTING.png" style="width:55%; margin-left:20%">
+            </div>
+
+            <div class="juxtapose" style="margin-left: 6.5%; width: 85%; max-height: 900px;">
+                <img src=".\img\Sliders\Multi-family Residential\MFH_Before.png" data-label="Present Day" />
+                <img src=".\img\Sliders\Multi-family Residential\MFH_After.png" data-label="Optimized Future" />
+            </div>
+
+
+            <script>
+                var lu = 'mfr'
+                var stage = 'ec-mfr'
+                $(function() {
+                    $('.stage-button-mfr').click(function() {
+                        $('.stage-button-mfr.active').removeClass('active');
+                        $(this).addClass('active');
+                        console.log(this.id)
+                        stage = this.id
+                        var istring = slus['mfr'][this.id]
+                        console.log(istring)
+                        $('#lu-img-mfr').attr('src', istring)
+                    })
+                })
+            </script>
+            <hr>
+        </div>
+
+        <div class="container body-black" id="neighborhood-commercial">
+            <h1>Neighborhood Commercial</h1>
+        </div>
+
+
+        <div class="container section-white">
+            <h1 style="margin-left: 15%;">Existing Conditions</h1>
+            <div class="row justify-content-md-left"  style="padding-left: 15%;">
+                <div class="col col-lg-5">
+                    <p>
+                        Commercial areas in the suburban context are typified by either big box
+                        regional retail centers or smaller-scale neighborhood shopping plazas. While
+                        the former is notorious for its excessive parking and carbon intensive waste
+                        streams, the latter is typically more distributed and offers more specialized
+                        services. Nevertheless, as the future of retail continues to trend toward
+                        online shopping, these strategically located brick and mortar business
+                        areas offer a variety of significant retrofit opportunities. Their proximity
+                        to residential neighborhoods positions them to play a key role in districtscale pedestrianization and micro-mobility services, and serve as local AEV
+                        dispatch and charging centers. 
+                    </p>
+                    
+                </div>
+                
+            </div>
+            <div class="row justify-content-md-left"  style="padding-left: 15%;">
+                <img class="study-grid-img "  src="./img/lu_study/06_Neighborhood Commercial/Plan_Aerial.png">
+                <img class="study-grid-img "  src="./img/lu_study/06_Neighborhood Commercial/Plan_Drawing.png">
+                <img class="study-grid-img " src="./img/lu_study/06_Neighborhood Commercial/Street View.png">
+                <img class="study-grid-img " src="./img/lu_study/06_Neighborhood Commercial/Chart.png">
+            </div>
+        </div>
+
+
+
+        <div class="container section-white">
+            <hr style="margin-top: 10px;">
+            <h1 style="margin-left: 15%;"> Commercial Center - Existing Conditions</h1>
+
+            <div class="row justify-content-md-left"  style="padding-left: 15%;">
+                <img class="study-grid-img "  src="./img/lu_study/07_Commercial Center/Plan_Aerial.png">
+                <img class="study-grid-img "  src="./img/lu_study/07_Commercial Center/Plan_Drawing.png">
+                <img class="study-grid-img " src="./img/lu_study/07_Commercial Center/Street View.png">
+                <img class="study-grid-img " src="./img/lu_study/07_Commercial Center/Chart.png">
+            </div>
+        </div>
+
+        <div class="container section-white">
+            <hr style="margin-top: 10px;">
+            <h1 style="margin-left: 15%;"> Town Center - Existing Conditions</h1>
+
+            <div class="row justify-content-md-left"  style="padding-left: 15%;">
+                <img class="study-grid-img "  src="./img/lu_study/08_Town Center/Plan_Aerial.png">
+                <img class="study-grid-img "  src="./img/lu_study/08_Town Center/Plan_Drawing.png">
+                <img class="study-grid-img " src="./img/lu_study/08_Town Center/Street View.png">
+                <img class="study-grid-img " src="./img/lu_study/08_Town Center/Chart.png">
+            </div>
+        </div>
+
+        <div class="container body-white">
+            <hr>
+            <h1 class="indent">Phasing Strategies</h1>
+            <div class="row">
+                <img src="./img/slu/00_Pure Line Work/Neighborhood Commercial AXO_Hang over Chart.png" class="axo-legend">
+            </div>
+            <div id="stage-buttons" class="btn-group btn-group-toggle indent" data-toggle="buttons">
+                <label class="btn btn-secondary active stage-button-nc" id='ec-nc'>
+                    <input type="radio" name="options"  autocomplete="off" checked> Existing Conditions
+                  </label>
+                <label class="btn btn-secondary active stage-button-nc" id='ad1-nc'>
+                    <input type="radio" name="options"  autocomplete="off" checked> AD1
+                  </label>
+                <label class="btn btn-secondary active stage-button-nc" id="ad2-nc">
+                    <input type="radio" name="options" autocomplete="off" checked> AD2
+                </label>
+            </div>
+            <div id="lu-text" style="width: 70%;">
+
+            </div>
+            <div id="lu-image" class="quarter-gap">
+                <img id='lu-img-nc' src="./img/slu/06_Neighborhood Commercial/00_NC_EXISTING.png" style="width:55%; margin-left:20%">
+            </div>
+            <div class="juxtapose" style="margin-left: 6.5%; width: 85%; max-height: 900px;">
+                <img src=".\img\Sliders\Neighborhood Commercial\NC_Before.png" data-label="Present Day" />
+                <img src=".\img\Sliders\Neighborhood Commercial\NC_After.png" data-label="Optimized Future" />
+            </div>
+            <hr>
+        </div>
+        <script>
+            var lu = 'nc'
+            var stage = 'ec-nc'
+            $(function() {
+                $('.stage-button-nc').click(function() {
+                    $('.stage-button-nc.active').removeClass('active');
+                    $(this).addClass('active');
+                    console.log(this.id)
+                    stage = this.id
+                    var istring = slus['nc'][this.id]
+                    console.log(istring)
+                    $('#lu-img-nc').attr('src', istring)
+                })
+            })
+        </script>
+
+    <div class="container body-black" id="professional-campus">
+        <h1>Professional Campus</h1>
+    </div>
+
+    <div class="container section-white">
+        <h1 style="margin-left: 15%;">Existing Conditions</h1>
+        <div class="row justify-content-md-left"  style="padding-left: 15%;">
+            <div class="col col-lg-5">
+                <p>
+                    The office park has been a standard feature in the American suburbs since
+                    the 1950s, and in terms of typical zoning and land use, there has been very
+                    little innovation since the post WWII era. With nearly 100% of professional
+                    campus employees communizing via private vehicle, these spaces are
+                    typically filled by an overwhelming percentage of on-site parking. Building
+                    footprints are typically large, which makes them hard to adapt to new uses
+                    or shifting real estate markets, and lanscaped area is often composed of
+                    hardscape, lawn and other low environmental performance materials. 
+                </p>
+                
+            </div>
+            
+        </div>
+        <div class="row justify-content-md-left"  style="padding-left: 15%;">
+            <img class="study-grid-img "  src="./img/lu_study/06_Neighborhood Commercial/Plan_Aerial.png">
+            <img class="study-grid-img "  src="./img/lu_study/06_Neighborhood Commercial/Plan_Drawing.png">
+            <img class="study-grid-img " src="./img/lu_study/06_Neighborhood Commercial/Street View.png">
+            <img class="study-grid-img " src="./img/lu_study/06_Neighborhood Commercial/Chart.png">
+        </div>
+    </div>
+
+
+    <div class="container section-white">
+        <h1 style="margin-left: 15%;">Employment Mix - Existing Conditions</h1>
+        
+        <div class="row justify-content-md-left"  style="padding-left: 15%;">
+            <img class="study-grid-img "  src="./img/lu_study/09_Employment Mix/Plan_Aerial.png">
+            <img class="study-grid-img "  src="./img/lu_study/09_Employment Mix/Plan_Drawing.png">
+            <img class="study-grid-img " src="./img/lu_study/09_Employment Mix/Street View.png">
+            <img class="study-grid-img " src="./img/lu_study/09_Employment Mix/Chart.png">
+        </div>
+    </div>
+    <div class="container section-white">
+        <hr>
+        <div style="margin-left: 15%;"> 
+            <h1>Phasing Strategies</h1>
+            <div class="row">
+                <img src="./img/slu/00_Pure Line Work/Professional Campus AXO_Hang over Chart.png" class="axo-legend">
+            </div>
+            <div id="stage-buttons" class="btn-group btn-group-toggle" data-toggle="buttons">
+                <label class="btn btn-secondary active stage-button-pc" id='ec-pc'>
+                    <input type="radio" name="options"  autocomplete="off" checked> Existing Conditions
+                  </label>
+                <label class="btn btn-secondary active stage-button-pc" id='ad1-pc'>
+                    <input type="radio" name="options"  autocomplete="off" checked> AD1
+                  </label>
+                <label class="btn btn-secondary active stage-button-pc" id="ad2-pc">
+                    <input type="radio" name="options" autocomplete="off" checked> AD2
+                </label>
+            </div>
+            <div id="lu-text" style="width: 70%;">
+        </div>
+
+        </div>
+        <div id="lu-image" class="quarter-gap">
+            <img id='lu-img-pc' src="./img/slu/10_Professional Campus/00_PC_EXISTING.png" style="width:55%; margin-left:20%">
+        </div>
+        <div class="juxtapose" style="margin-left: 6.5%; width: 85%; max-height: 900px;">
+            <img src=".\img\Sliders/Professional Campus/PC_Before.png" data-label="Present Day" />
+            <img src=".\img\Sliders\Professional Campus/PC_After.png" data-label="Optimized Future" />
+        </div>
+        <hr>
+    </div>
+    <script>
+        var lu = 'nc'
+        var stage = 'ec-pc'
+        $(function() {
+            $('.stage-button-pc').click(function() {
+                $('.stage-button-pc.active').removeClass('active');
+                $(this).addClass('active');
+                console.log(this.id)
+                stage = this.id
+                var istring = slus['pc'][this.id]
+                console.log(istring)
+                $('#lu-img-pc').attr('src', istring)
+            })
+        })
+    </script>
+
+</div>
+    <div class="container body-black" id='day-in-the-life' style="padding-right: 0px; padding-left: 0px;">
+
+        <div id="carousels"  style="position: absolute; width: 100%; padding-left: ;">
+            <h2 style="margin-left: 10%;">A day in the life</h2>
+
+            <div id="myCarousel" class="carousel" data-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                    <li data-target="#myCarousel" data-slide-to="1"></li>
+                    <li data-target="#myCarousel" data-slide-to="2"></li>
+                    <li data-target="#myCarousel" data-slide-to="3"></li>
+                    <li data-target="#myCarousel" data-slide-to="4"></li>
+                    <li data-target="#myCarousel" data-slide-to="5"></li>
+                    <li data-target="#myCarousel" data-slide-to="6"></li>
+                </ol>
+                <div class="carousel-inner" >
+                    <div class="item active">
+                        <img src="./img/ditl/v2/1_pickup_1.png" alt="">
+                        <div class="carousel-caption">
+                            <h2>Early Package Delivery</h2>
+                            <p>Drones and service bots provide direct home delivery of small parcels, groceries, and other daily goods.</p>
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <img src="./img/ditl/v2/2_In Vehicle tv.jpg" alt="">
+                        <div class="carousel-caption">
+                            <h2>Morning Commute</h2>
+                            <p>Autonomous vehicles offer multiple customizable interface options including immersive themed environments, video conferencing, and live network television. </p>
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <img src="./img/ditl/v2/3_View of Charging Stations.jpg" alt="New ">
+                        <div class="carousel-caption">
+                            <h2>Highway travel</h2>
+                            <p>Low-impact infrastructure networks can be connected to scenic regional park systems with minimal environmental degradation.</p>
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <img src="./img/ditl/v2/4_Drop off scene.jpg" alt="">
+                        <div class="carousel-caption">
+                            <h2>Office Arrival</h2>
+                            <p>Modular, multiscalar office spaces can be reserved as needed for long-term projects or one-off meetings.</p>
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <img src="./img/ditl/v2/5_Drone ride from the sky.jpg" alt="">
+                        <div class="carousel-caption">
+                            <h2>Aerial Transit</h2>
+                            <p>Drone taxis provide fast regional transportation options, and can be co-located near ground-transportation hubs, employment centers, and institutional campuses.</p>
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <img src="./img/ditl/v2/7_Pick up 04.jpg" alt="">
+                        <div class="carousel-caption">
+                            <h2>Custom Ride</h2>
+                            <p>Autonomous vehicles offer safe, customizable transportation solutions for children and other non-drivers.</p>
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <img src="./img/ditl/v2/8_From Above.jpg" alt="">
+                        <div class="carousel-caption">
+                            <h2>Back Home</h2>
+                            <p>Residential communities are designed around interior recreational spaces, with connections to multi-modal transportation nodes along the exterior edges. </p>
+                        </div>
+                    </div>
+
+
+                </div>
+                <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+                    <span class="glyphicon glyphicon-chevron-left"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="right carousel-control" href="#myCarousel" data-slide="next">
+                    <span class="glyphicon glyphicon-chevron-right"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="container body-black">
+        <div id="mirage" class="container">
+
+            <div class="row">
+                <div class="col-sm-5">
+                    <h1>OASIS</h1>
+                    <p>OASIS is a parametric modeling framework that allows a user to input an existing land use plan and assign value to the relationships between land uses. The system then iteratively reconfigures land use across the site, generating scores
+                        based on these adjacencies.</p>
+
+                    <!-- <div class="row">
+                        <button type="button" class="btn btn-dark btn-circle btn-xl">Rank Land Use <br>Adjacencies</button>
+                        <button type="button" class="btn btn-dark btn-circle btn-xl">Optimize land <br>use pattern</button>
+
+                    </div> -->
+                </div>
+                <div class="col-sm-5">
+                    <h1>Mirage</h1>
+                    <p>MIRAGE is a parametric modeling framework that allows a user to input an existing land use plan and assign value to the relationships between land uses. The system then iteratively reconfigures land use across the site, generating
+                        scores based on these adjacencies.</p>
+<!-- 
+                    <div class="row">
+                        <button type="button" class="btn btn-dark btn-circle btn-xl">Explore block-<br>level <br>configurations</button>
+                        <button type="button" class="btn btn-dark btn-circle btn-xl">Another thing...</button>
+                    </div> -->
+                </div>
+            </div>
+            <div>
+                <br><br><br><br>
+                <h2>OASIS</h2>
+                <img src="./img/diagrams/mirage/om_oasis.png" style="width: 100%; margin-left: -10%;">
+            </div>
+            <div>
+                <br><br><br><br>
+                <h2>MIRAGE</h2>
+                <img src="./img/diagrams/mirage/om_mirage.png" style="width: 100%;  margin-left: -10%;b">
+            </div>
+        </div>
+
+    </div>
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="./js/juxtapose.min.js" type="text/javascript"></script>
+    <link rel="stylesheet" href="./css/juxtapose.css">
+    <script src="./js/jquery.min.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+    <script src="./data/content.js"></script>
+    <script src="./js/addContent.js"></script>
+
 </body>
-</html>

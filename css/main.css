@@ -1,0 +1,383 @@
+body {
+    margin: 0;
+    background-color: #000;
+    color: #fff;
+    font-family: Monospace;
+    font-size: 12px;
+    line-height: 24px;
+    overscroll-behavior: none;
+    padding: 0;
+}
+
+html,body{overflow-x: hidden;} 
+
+a {
+    color: #000;
+    /* text-decoration: none; */
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+button {
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+canvas {
+    display: block;
+}
+
+#info {
+    position: absolute;
+    top: 0px;
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    text-align: center;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    pointer-events: none;
+    z-index: 1;
+    /* TODO Solve this in HTML */
+}
+
+a,
+button,
+input,
+select {
+    pointer-events: auto;
+}
+
+.dg.ac {
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    z-index: 2 !important;
+    /* TODO Solve this in HTML */
+}
+
+#overlay {
+    /* position: absolute; */
+    /* z-index: 2; */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(0, 0, 0, 0.7);
+}
+
+#overlay {
+    position: fixed;
+    display: block;
+    opacity: 0.85;
+    background-color: #000;
+    z-index: 99;
+    text-align: center;
+}
+
+#overlay button {
+    background: #ffffff;
+    border: 0;
+    color: #000000;
+    padding: 50px 50px;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+#notSupported {
+    width: 50%;
+    margin: auto;
+    background-color: #f00;
+    margin-top: 20px;
+    padding: 10px;
+}
+
+.body-white {
+    background-color: white;
+    padding-top: 50px;
+    width: 100%;
+    color: black;
+    min-height: 100vh;
+    /* min-height: 1000px; */
+}
+
+.section-white {
+    background-color: white;
+    padding-top: 150px;
+    width: 100%;
+    color: black;
+}
+
+
+.body-black {
+    padding-top: 25px;
+    width: 100%;
+    background-color: black;
+    /* min-height: 1000px; */
+    color: white;
+    min-height: 100vh;
+    /* padding-left: 0;
+    padding-right: 0; */
+}
+
+#overlay-close-button {
+    padding-top: 5%;
+    padding-right: 10%;
+}
+
+#intro-slide {
+    /* background-image: url('../img/ditl/v1/from above.jpg'); */
+    /* background-image: url('../img/hero/03birdview_withtree&label.jpg'); */
+    /* background-image: url('../img/Landing Video/Landing Video.mp4'); */
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#single-family-residential {
+    background-image: url('../img/lu_aerials/LU1_aerial.png');
+    background-position: center;
+}
+
+#multi-family-residential {
+    background-image: url('../img/lu_aerials/LU2_aerial.png');
+    /* background-position: center; */
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#neighborhood-commercial {
+    background-image: url('../img/lu_aerials/LU10_aerial.png');
+    /* background-position: center; */
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+#estate-residential {
+    background-image: url('../img/lu_aerials/Estate Residential.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#professional-campus {
+    background-image: url('../img/lu_aerials/Professional Campus.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#panorama {
+    width: 1200px;
+    height: 600px;
+}
+
+.testing {
+    /* border-color: black; */
+    /* border-width: 3px;
+    border-style: solid; */
+    padding-bottom: 3%;
+}
+
+.carousel-caption {
+    top: 20px;
+    /* right: 0; */
+    left: 12%;
+    padding-right: 5px;
+    text-align: left;
+    width: 350px;
+    font-size: 14pt;
+    line-height: 38px;
+}
+
+.carousel-caption-right {
+    top: 20px;
+    right: 0;
+    left: 85%;
+    text-align: left;
+    width: 350px;
+    font-size: 21pt;
+}
+
+.vertical-center {
+    margin: 0;
+    padding-top: 5%;
+    top: 50%;
+}
+
+.hide-img {
+    /* visibility: hidden; */
+    /* position:relative;*/
+    /* filter: brightness(0.2);  */
+    /* invert(.1); */
+    opacity: 1;
+    /* transition: opacity 0.3s; */
+}
+
+.lu-plan {
+    width: 85%;
+}
+
+.lu-plan-img {
+    width: 75%;
+}
+
+.analysis-row {
+    padding-top: 5px;
+}
+
+.image-slider {
+    position: relative;
+    display: inline-block;
+    line-height: 0;
+    /* max-width: 800px; */
+    width: 100%;
+}
+
+.image-slider>div {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 25px;
+    max-width: 100%;
+    overflow: hidden;
+    resize: horizontal;
+}
+
+.image-slider>div:before {
+    content: '';
+    position: absolute;
+    right: 0;
+    /* bottom: 50%; */
+    /* width: 30px; */
+    /* height: 30px; */
+    padding: 5px;
+    background: linear-gradient(-45deg, white 50%, transparent 0);
+    background-clip: content-box;
+    cursor: ew-resize;
+    -webkit-filter: drop-shadow(0 0 2px black);
+    filter: drop-shadow(0 0 2px black);
+}
+
+.image-slider img {
+    user-select: none;
+    /* max-width: 100%; */
+    max-width: 1200px;
+}
+
+.section-container {
+    width: 85%;
+}
+
+.indent {
+    margin-left: 15%;
+}
+
+.panorama {
+    margin-left: -12.5%;
+    width: 125%;
+    height: 800px;
+}
+
+.axo-img {
+    width: 87%;
+    margin-left: 6.5%;
+}
+
+.nav-link {
+    font-size: 1.4rem;
+}
+
+.study-grid-img {
+    max-width: 300px;
+    padding: 15px;
+    max-height: 350px;
+}
+
+.legend-image {
+    width: 150px;
+    padding: 5px;
+}
+
+.legend-image-index {
+    width: 200px;
+    padding: 5px;
+}
+
+.btn-circle.btn-xl {
+    width: 140px;
+    height: 140px;
+    padding: 10px 16px;
+    border-radius: 70px;
+    font-size: 12px;
+    text-align: center;
+    color: black;
+}
+
+ul {
+    padding-inline-start: 5px;
+    list-style-type: none;
+}
+
+.header-align {
+    margin-left: 8%;
+}
+
+.study-grid-img-left{
+    margin-right: -100px;
+    margin-left: 30%;
+}
+
+.study-grid-img-right{
+    margin-right: 20%;
+    margin-left: -60px;
+}
+
+.quarter-gap {
+    margin-bottom: 200px;
+}
+
+.juxtapose {
+    margin-bottom: 20px;
+    margin-left: 6.5%;
+    width: 85%;
+    max-height: 900px;
+}
+
+hr {
+    border-top: 2px solid #000000;
+    margin-left: 40%;
+    margin-right: 40%;
+    margin-bottom: 100px;
+    margin-top: 100px;
+}
+
+p, li {
+    font-size: 1.1em;
+}
+
+.item {
+    width: 90%;
+    padding-left: 10%;
+}
+
+.axo-legend {
+    padding-top: 15px;
+    width: 50%;
+    margin-left: 15%;
+}
+
+.section-align {
+    padding-left: 9%;
+}
+
+.plan-align {
+    padding-left: 4%;
+}
