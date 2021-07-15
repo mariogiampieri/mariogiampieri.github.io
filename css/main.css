@@ -133,6 +133,17 @@ select {
     padding-right: 10%;
 }
 
+
+.goo {
+    font-size: 3rem;
+    line-height: 1.35;
+    display: inline;
+    box-decoration-break: clone;
+    background: var(--color-highlight);
+    padding: 0.5rem 1rem;
+    filter: url('#goo');
+}
+
 #intro-slide {
     /* background-image: url('../img/ditl/v1/from above.jpg'); */
     /* background-image: url('../img/hero/03birdview_withtree&label.jpg'); */

@@ -97,13 +97,23 @@
         
     
         <!-- <div id="introduction" class="container"> -->
-            <div style="background-color: rgba(255,255,255,0.6); width: 65%;">
-                <h1 id="introduction" style="color: black; position:absolute; padding-top:25px; padding-left: 50px;">Next Generation American Suburbs</h1>
-            </div>
-            <video autoplay muted loop id="myVideo" style=" width: 105%;">
-                <source src="./img/Landing Video/Landing Video.mp4" type="video/mp4">
-            </video>
+            <!-- <div style="background-color: rgba(255,255,255,0.6); width: 65%;" > -->
+                <div class="goo">
+                    <h1 id="introduction" style="color: black; position:absolute; padding-top:25px; padding-left: 50px; font-size: 5rem; line-height: 7rem;"><span style="background-color: rgba(255, 255, 255, 0.7)">Next Generation American Suburbs </span> </h1>
+                    
+                </div>
+                
+
+                
+            <!-- </div> -->
+            <video autoplay muted loop id="myVideo" style=" width: 105%;"></video>
         <!-- </div> -->
+        <script>
+            var video = document.getElementById('myVideo');
+            video.src = '/img/Landing Video/Landing_Video_SparkVideo.mp4'
+            console.log('loaded')
+            video.load();
+        </script>
     </div>
 
     <div class="container body-white">
@@ -1810,24 +1820,28 @@
             <div class="row">
                 <div class="col-sm-5">
                     <h1>OASIS</h1>
-                    <p>OASIS is a parametric modeling framework that allows a user to input an existing land use plan and assign value to the relationships between land uses. The system then iteratively reconfigures land use across the site, generating scores
-                        based on these adjacencies.</p>
+                    <p>The OASIS model considers the regional or district scale adjacencies
+                        between different land uses based on available planning documents and
+                        a given area of interest. The design team, along with local stakeholders,
+                        develop a scoring system based on the values ascribed to single land uses,
+                        as well as the relationships between adjacent land uses. For example,
+                        ascribing positive symbiotic value between residential and low-density
+                        commercial land uses based on the ease of access to goods and the
+                        proximity of a customer base. Similarly, a penalty system is defined both
+                        to check undesirable adjacencies, as well as ensuring that all desired
+                        land uses are included in the final plan.</p>
 
-                    <!-- <div class="row">
-                        <button type="button" class="btn btn-dark btn-circle btn-xl">Rank Land Use <br>Adjacencies</button>
-                        <button type="button" class="btn btn-dark btn-circle btn-xl">Optimize land <br>use pattern</button>
-
-                    </div> -->
                 </div>
                 <div class="col-sm-5">
                     <h1>Mirage</h1>
-                    <p>MIRAGE is a parametric modeling framework that allows a user to input an existing land use plan and assign value to the relationships between land uses. The system then iteratively reconfigures land use across the site, generating
-                        scores based on these adjacencies.</p>
-<!-- 
-                    <div class="row">
-                        <button type="button" class="btn btn-dark btn-circle btn-xl">Explore block-<br>level <br>configurations</button>
-                        <button type="button" class="btn btn-dark btn-circle btn-xl">Another thing...</button>
-                    </div> -->
+                    <p>The MIRAGE model takes the output from OASIS and uses that as an
+                        input for block-scale modeling. This land use configuration, along with
+                        specific targets (such as total number of housing units and average
+                        square footage of each unit) are used along with specific environmental
+                        objectives to arrive at detailed land use configurations. Objectives
+                        include the reduction of roadway area, the contiguity of open spaces,
+                        and the co-location of shared amenities.</p>
+
                 </div>
             </div>
             <div>
